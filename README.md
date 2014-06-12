@@ -27,3 +27,4 @@ $array = get_crop_focus( $attachment_id, $return_false_if_not_set );
 =====
 
 - replace param on get_crop_focus() with has_crop_focus() function
+- namespace consistently

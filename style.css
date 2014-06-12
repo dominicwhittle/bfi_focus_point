@@ -1,0 +1,92 @@
+#wknds-focus-point {
+  position: absolute !important; /* Override draggable()'s position:relative; */
+  /*left: 50%;
+  top: 50%;*/
+  cursor: move;
+  display: block;
+  z-index: 100;
+  width: 1px;
+  height: 1px;
+  background: white;
+}
+
+#wknds-focus-point:before {
+  content: "";
+  position: absolute;
+  top: -41px;
+  left: -44px;
+  background: url( loupe.png ) no-repeat center center;
+  background-size: 100% 100%;
+  width: 88px;
+  height: 88px;
+}
+
+
+#wknds-fp__indicator {
+  position: absolute;
+  top: 24px;
+  left: 23px;
+  width: 7px;
+  height: 7px;
+  border-radius: 4px;
+  background-color: #333;
+}
+
+.wknds-focus-point--saved #wknds-fp__indicator {
+  background-color: #0cf;
+}
+
+
+
+
+
+#wknds-focus-cover {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  z-index: 99999; /* Blame WP, not me */
+  overflow: auto; /* Allow scrolling if images are longer than window height */
+}
+
+#wknds-focus-wrap {
+  position: relative;
+  margin: 30px auto;
+  max-width: 860px;
+}
+
+#wknds-focus-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+#wknds-focus-notes {
+  font-family: Consolas, Monaco, monospace;
+  font-size: 11px;
+  margin: 30px auto;
+  color: #999;
+  color: rgba(0, 0, 0, 0.4);
+  padding: 0 30px;
+  max-width: 860px;
+}
+
+#wknds-focus-notes span {
+  float: right;
+  /*color: #0cf;*/
+  cursor: pointer;
+}
+
+#wknds-focus-close {
+  position: absolute;
+  font-size: 34px;
+  line-height: 22px;
+  display: block;
+  padding: 15px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
