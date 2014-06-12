@@ -100,9 +100,11 @@ function wknds_get_focus_markup(){
 // Enqueue scripts and styles
 add_action( 'admin_enqueue_scripts', 'wknds_crop_focus_styles' );
 function wknds_crop_focus_styles() {
-  wp_enqueue_style( 'wknds-focus-css', get_template_directory_uri() . '/focus/style.css', false, '1.0.0' );
+  wp_enqueue_style( 'wknds-focus-css', get_template_directory_uri() . '/style.css', false, '1.0.0' );
+  // wp_enqueue_style( 'wknds-focus-css', plugins_url( 'style.css' , __FILE__ ), false, '1.0.0' );
   wp_enqueue_script( 'jquery-ui-draggable' );
-  wp_enqueue_script( 'wknds-focus-script', get_template_directory_uri() . '/focus/script.js', array( 'jquery' ), '', true );
+  // wp_enqueue_script( 'wknds-focus-script', get_template_directory_uri() . '/focus/script.js', array( 'jquery' ), '', true );
+  wp_enqueue_script( 'wknds-focus-script', plugins_url( 'script.js' , __FILE__ ), array( 'jquery' ), '', true );
 }
 
 
