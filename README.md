@@ -5,7 +5,7 @@ This is an addon for BFI Image (forked version), which let's the user specify an
 
 Currently only works with the version BFI Image that I forked to add the crop offset parameter.
 
-(dominicwhittle/bfi_thumb)[https://github.com/dominicwhittle/bfi_thumb]
+[dominicwhittle/bfi_thumb](https://github.com/dominicwhittle/bfi_thumb)
 
 
 Usage
